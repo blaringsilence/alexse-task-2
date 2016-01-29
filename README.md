@@ -1,6 +1,4 @@
 # alexse-task-2
-Features:
-
 
 Used:
 - `Vue.js`
