@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Update Courses | AlexSE</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.qtip.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>  </head>
+  <body>
+  <!--TOP MENU-->
+    <div class="container-fluid top-menu">
+      <div class="cols-xs-12 notice">
+       <img src="http://alexse.com/views/home/logo.png" alt="AlexSE Logo" class="top-logo">
+       <span>All typical components of the top bar/menu can be placed here</span>
+      </div>
+    </div>
+  <!--/TOP MENU-->
+  <div class="container-fluid"> <!--CONTAINER FOR WHOLE PAGE-->
+  <div class="row">
+  <!--PROFILE SIDEBAR-->
+  <div class="col-xs-12 col-md-1" id="sidebar">
+   <div class="row">
+    <div class="col-xs-12 text-center">
+      <a href="#profile" title="Your Profile">
+       <img v-bind:src="picture" alt="Profile Picture" class="profile-picture">
+       </a>
+    </div>
+    </div>
+  </div>
+  <!--/PROFILE SIDEBAR-->
+  <!--PAGE CONTENT-->
+  <div class="col-xs-12 col-md-8">
+    <h1 class="update-header">Update Your Courses</h1>
+    <form id="update-form">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>First, select your faculty:</p>
+        <label v-for="faculty in faculties" class="form-group radio-inline">
+        <input type="radio" name="faculty-radio" v-bind:value="faculty.name" v-model="chosenFaculty" v-on:change="loadDep()">
+        {{faculty.name}}
+        </label>
+      </div>
+    </div>
+    </form>
+</div>
+  </div>
+  </div>
+  <!--/PAGE CONTENT-->
+ 
+
+  
+  <!--SCRIPTS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/jquery.qtip.min.js"></script>
+    <script src="js/script.js"></script>
+  <!--/SCRIPTS-->
+  </body>
+</html>

@@ -1,0 +1,78 @@
+/* GENERAL */
+body{
+	font-family: 'Quicksand', sans-serif;
+	background-color: #ecf0f1;
+
+}
+
+p{
+	font-size: 1.3em;
+	font-weight: bold;
+}
+select{
+	margin-bottom: 1em;
+}
+
+.btn{
+	text-transform: uppercase;
+	transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s; 	
+}
+/*MENU*/
+.top-menu{
+	background: #232526; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #232526 , #414345); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */     
+	color: white;
+	text-transform: lowercase;
+	text-align: center;
+	border-bottom: 0.2em double #0b3e51;
+}
+
+.top-logo{
+	width: 3rem; /* Responsive units */
+}
+
+/*SIDEBAR*/
+#sidebar{
+	background: #136a8a; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #136a8a , #267871); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #136a8a , #267871); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+}
+@media (min-width: 992px) {
+    #sidebar{
+    	height:100vh;
+    }
+}
+
+#sidebar:hover{
+	opacity: 0.95;
+}
+
+.profile-picture{
+	width:7rem;
+	border-radius: 50%;
+	box-shadow: 0em 0.1em 0.2em 0.2em rgba(236, 240, 241, 0.1);
+	margin-top:2em;
+	margin-bottom: 2em;
+	transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s; /* Better safe than sorry */
+}
+
+.profile-picture:hover{
+	opacity:0.6;
+}
+
+/* UPDATE FORM */
+#update-form label{
+	margin-left: 2em;
+}
+#update-form p{
+	margin-top: 1em;
+}
+#update-form .btn{
+	width:100%;
+}
+
